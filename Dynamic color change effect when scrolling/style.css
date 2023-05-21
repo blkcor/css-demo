@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+  font-size: 1.125rem;
+  font-family: system-ui;
+  line-height: 1.5;
+  background:#fff;
+}
+
+.logo{
+  mix-blend-mode: difference;
+  width: 9rem;
+  height: 5rem;
+  margin:1rem;
+  object-fit: cover;
+}
+
+.wrapper{
+  width: calc(min(100% - 3rem, 65ch));
+  margin-inline: auto;
+}
+
+section{
+  padding-block: 3rem;
+}
+
+section:nth-child(even){
+  background: #fff;
+  color: #323232;  
+}
+
+section:nth-child(odd){
+  color: #efefef;
+  background: #000;
+}
+
+
+@media (width>980px){
+  .logo{
+    position: sticky;
+    top:.2rem;
+    
+  }
+}
+
+
